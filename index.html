@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./javaScript.js"></script>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding-top: 40px;
+            width: 75%;
+            margin: auto;
+            background-color: #f7f7f7;
+            padding-bottom: 80px;
+        }
+
+        form{
+            background-color: #fff;
+            width: 80%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 8px 6px 8px #a1a1a1;
+            margin: auto;
+            margin-bottom: 50px;
+
+        }
+
+        label{
+            font-size: 20px;
+            color: red;
+            text-shadow: 1px 1px orange;
+
+        }
+
+        input{
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input:last-of-type{
+            margin-bottom: 30px;
+        }
+
+        button{
+            width: 230px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            padding: 7px;
+            font-weight: bold;
+            background-color: #e59e6e;
+            padding: 10px;
+            border-radius: 15px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            border: 2px solid #d38a5a;
+        }
+
+        #demo{     
+            width: 80%;
+            margin: auto;
+            color: #e59e6e;
+            text-shadow: 1px 0.4px  red;
+            background-color: #fff;
+        }
+
+        #p{
+            background-color: #fff;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="#">
+            <label for="meno">Názov filmu</label>
+            <input type="meno" id="meno">
+
+            <label for="rok">Rok vydania</label>
+            <input type="rok" id="rok">
+
+            <label for="herec">Herci</label>
+            <input type="herec" id="herec">
+
+            <button onclick="pridajFilmy(event)">Vložiť</button>
+            <button onclick="odstranPoslednyFilm(event)">Odstrániť posledný záznam</button>
+            <button onclick="odstanVsetkyFilmy(event)">Vymazať celý záznam</button>
+        </form>
+
+        <div id="demo">
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>
